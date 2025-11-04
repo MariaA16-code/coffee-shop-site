@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MoonBean Coffee — Coffee Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#"><img src="assets/logo.svg" alt="MoonBean Coffee logo" /></a>
+      <nav class="nav">
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>MoonBean Coffee</h1>
+        <p>Handcrafted coffees, fresh pastries, cozy vibes.</p>
+        <a class="cta" href="#menu">See Menu</a>
+      </div>
+    </section>
+
+    <section id="menu" class="container menu-section">
+      <h2>Our Menu</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/coffee1.svg" alt="Cappuccino" />
+          <h3>Cappuccino</h3>
+          <p>Rich espresso, steamed milk, and a perfect foam crown.</p>
+          <div class="price">PKR 450</div>
+        </article>
+        <article class="card">
+          <img src="assets/coffee2.svg" alt="Latte" />
+          <h3>Latte</h3>
+          <p>Smooth espresso with velvety steamed milk.</p>
+          <div class="price">PKR 480</div>
+        </article>
+        <article class="card">
+          <img src="assets/pastry.svg" alt="Pastry" />
+          <h3>Butter Croissant</h3>
+          <p>Flaky, buttery, baked fresh every morning.</p>
+          <div class="price">PKR 200</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About MoonBean</h2>
+      <p>We roast small-batch beans and prepare each cup with love. Sit, relax, and enjoy a calm corner of the city.</p>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="grid">
+          <img src="assets/coffee1.svg" alt="coffee" />
+          <img src="assets/coffee2.svg" alt="coffee" />
+          <img src="assets/pastry.svg" alt="pastry" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact & Visit</h2>
+      <div class="contact-grid">
+        <form id="contactForm">
+          <label>Name <input type="text" name="name" required /></label>
+          <label>Email <input type="email" name="email" required /></label>
+          <label>Message <textarea name="message" rows="4" required></textarea></label>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="visit">
+          <h3>Visit Us</h3>
+          <p>123 Bean Street, Lahore, Pakistan</p>
+          <p><strong>Hours:</strong> Mon–Sun 8:00 AM – 9:00 PM</p>
+          <div class="map-placeholder">Map placeholder</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> MoonBean Coffee — All rights reserved.</p>
+      <p class="small">Made with ☕ and ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
